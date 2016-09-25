@@ -11,7 +11,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             int a = int.Parse(Console.ReadLine()), b = int.Parse(Console.ReadLine()), c = int.Parse(Console.ReadLine());
-            if (a == 0 & b == 0 & c == 0)
+            if (a==0 & b==0 & c==0)
             {
                 Console.WriteLine("-1");
             }
