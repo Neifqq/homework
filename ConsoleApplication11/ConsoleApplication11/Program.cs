@@ -8,7 +8,7 @@ namespace ConsoleApplication11
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             long n = long.Parse(Console.ReadLine()), a = 2;
             while (n > 1)
