@@ -10,24 +10,13 @@ namespace ConsoleApplication10
     {
         static void Main(string[] args)
         {
-            int k = int.Parse(Console.ReadLine()), s = 0;
-            long p;
-            for (p = 3; s <= k; p += 2)
+            int n = int.Parse(Console.ReadLine());
+            long s = 0;
+            for (long i = (long)Math.Pow(10,n-1); i < (long)Math.Pow(10,n); i++)
             {
-                int j = -1;
-                if (p % 3 != 0 && p % 5 != 0)
-                {
-                    for (int a = 2; (a < p) && (j == -1); a++)
-                    {
-                        if ((Math.Pow(a, p - 1) - 1) % p == 0)
-                        {
-                            s++;
-                            Console.WriteLine(p);
-                            j = -j;
-                        }
-                    }
-                }
+                s += i;
             }
-        }
+            Console.WriteLine(s);
+        }    
     }
 }
